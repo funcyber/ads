@@ -12,7 +12,7 @@
 	    
         if(!g_confirm && !go_ads.includes('#YOUR'))
          {
-		popbox.style.display = 'none';
+		popbox.style.display = 'block';
     }
 
         $(document).on('click','.g_url',function(e)
