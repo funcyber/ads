@@ -12,13 +12,7 @@
 	    
         if(!g_confirm && !go_ads.includes('#YOUR'))
          {
-		$(window).scroll(function (event) {
-		    var scroll = $(window).scrollTop();
-		    if (scroll >= 200) {
-		        $('#popbox').removeClass('hide');
-		    }
-		    console.log('scroll..');                    
-		});
+		popbox.style.display = 'none';
     }
 
         $(document).on('click','.g_url',function(e)
