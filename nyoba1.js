@@ -7,14 +7,7 @@ $(document).ready(function()
 	$(document.body).append(popbox);
 
     if(['.google.', 'bing.', 'yandex.', 'facebook.', 'pinterest.', 'blogger.'].some(s => document.referrer.toLowerCase().includes(s)) || ['fb', 'facebook', 'pinterest', 'twitter'].some(s => navigator.userAgent.toLowerCase().includes(s)))
-    {
-		$(window).scroll(function (event) {
-		    var scroll = $(window).scrollTop();
-		    if (scroll >= 200) {
-		        $('#popbox').removeClass('hide');
-		    }
-		    console.log('scroll..');                    
-		});
+    {$('#popbox').removeClass('hide');
     }
 
     $(document).on('click','.g_url',function(e)
