@@ -1,5 +1,5 @@
 
-    var go_current     	= window.location.href;    var reff     		= document.referrer;
+    var go_current     	= window.location.href;    
     function rChoice(arr) {	    return arr[Math.floor(arr.length * Math.random())];	}
     var direct_link_ads = rChoice([                            "https://google.com"                     ]);
     var ars             = rChoice([                            "https://timdax.net"                       ]);
